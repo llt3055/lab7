@@ -30,6 +30,8 @@ int main(){
     
     delete[] names;
     names = nullptr;
+    delete[] reverse;
+    reverse = nullptr;
     return 0;
 }
 
