@@ -7,7 +7,7 @@ using namespace std;
 //avoiding magic number
 const int SIZE = 5;
 
-//string* reverseArray(string*);
+string* reverseArray(string*);
 void displayArray(string*);
 
 int main(){
@@ -30,6 +30,11 @@ void displayArray(string *names){
     cout << endl;
 }
 
-//string* reverseArray(string *names){
-    
-//}
+string* reverseArray(string *names){
+    for (int i= 0;i<SIZE/2;i++){
+        string temp = *(names + i);
+        *(names + i) = *(names + (SIZE -1 -i));
+        
+
+    }
+}
