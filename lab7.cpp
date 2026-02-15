@@ -7,16 +7,20 @@ using namespace std;
 //avoiding magic number
 const int SIZE = 5;
 
-string* reverseArray(string*);
+//string* reverseArray(string*);
 void displayArray(string*);
 
 int main(){
     string *names = nullptr;
     names = new string[SIZE];
     for(int i=0;i<SIZE;i++){
-        *(names + i) = 1;
+        *(names + i) = "a";
     }
-    
+    displayArray(names);
+
+    delete[] names;
+    names = nullptr;
+    return 0;
 }
 
 void displayArray(string *names){
@@ -26,6 +30,6 @@ void displayArray(string *names){
     cout << endl;
 }
 
-string* reverseArray(string *names){
+//string* reverseArray(string *names){
     
-}
+//}
