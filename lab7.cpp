@@ -13,10 +13,17 @@ void displayArray(string*);
 int main(){
     string *names = nullptr;
     names = new string[SIZE];
+    for(int i=0;i<SIZE;i++){
+        *(names + i) = 1;
+    }
+    
 }
 
 void displayArray(string *names){
-    
+    for (int i=0; i<SIZE;i++){
+        cout << *(names +i) << " ";
+    }
+    cout << endl;
 }
 
 string* reverseArray(string *names){
