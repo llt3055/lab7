@@ -7,17 +7,18 @@ using namespace std;
 //avoiding magic number
 const int SIZE = 5;
 
-void reverseArray();
-void displayArray();
+string* reverseArray(string*);
+void displayArray(string*);
 
 int main(){
-
+    string *names = nullptr;
+    names = new string[SIZE];
 }
 
-void displayArray(){
-
+void displayArray(string *names){
+    
 }
 
-string* reverseArray(){
+string* reverseArray(string *names){
     
 }
